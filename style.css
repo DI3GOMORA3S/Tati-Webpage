@@ -1,5 +1,6 @@
 /* fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 /* fuentes */
 
 /* menu */
@@ -8,7 +9,7 @@
   margin: 0;
   padding: 20px;
   overflow: hidden;
-  background-color: #0C134F;
+  background-color: #E144E9;
 }
 
 .menu li {
@@ -17,7 +18,7 @@
 
 .menu li a {
   display: block;
-  color: #D4ADFC;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -31,11 +32,11 @@
 }
 
 .active {
-    background-color: #5C469C;
+    background-color: #E16CEA;
     border-radius: 10px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     .menu li {
         float: none;
       }
@@ -46,7 +47,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #1D267D;
+    background-color: #9BFF92;
 }
 
 a{
@@ -55,9 +56,10 @@ a{
 }
 
 .page-title{
-  color: #D4ADFC;
+  color: white;
   text-align: center;
   font-size: 3rem;
+  font-family: 'Pacifico', cursive;
 }
 /* general */
 
@@ -68,7 +70,7 @@ a{
   justify-content: center;
   padding: 20px 0px 20px 0px;
   margin: 60px 0px 60px 0px;
-  background-color: black;
+  background-color: #68E88A ;
 }
 
 .work-gallery img{
@@ -77,63 +79,14 @@ a{
 }
 /* galeria de trabajos */
 
-/* galeria principal provisoria */
-div.gallery {
-  border: 2px solid #D4ADFC;
-  border-radius: 5px;
-  background-color: #0C134F;
-}
-
-div.gallery:hover {
-  border: 2px solid #777;
-  opacity: 70%;
-}
-
-div.gallery img {
+/* pruebas */
+.pruebasv1{
+  margin: 50px 0px 50px 0px;
+  height: 600px;
   width: 100%;
-  height: 200px;
-  border-radius: 4px 4px 0px 0px;
+  background-color: #68E88A;
 }
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-  color: #D4ADFC;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive-gallery {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive-gallery {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive-gallery {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.gallery-container{
-  margin: 60px 10px 60px 10px;
-}
-/* galeria principal provisoria */
+/* pruebas */
 
 /* footer */
 .footer-container img:hover{
@@ -143,16 +96,16 @@ div.desc {
 .footer-container img{
     width: 35px;
     padding: 10px;
-    background-color: #D4ADFC;
+    background-color: white;
     border-radius: 40%;
 }
 
 .footer-container{
-    background-color: #0C134F;
+    background-color: #E144E9;
     width: 100%;
     text-align: center;
     padding: 50px 0px 50px 0pc ;
-    color: #D4ADFC;   
+    color: white;   
     display: block; 
 }
 /* footer */

@@ -1,6 +1,7 @@
 /* fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
 /* fuentes */
 
 /* menu */
@@ -36,7 +37,7 @@
     border-radius: 10px;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1250px) {
     .menu li {
         float: none;
       }
@@ -79,15 +80,6 @@ a{
 }
 /* galeria de trabajos */
 
-/* pruebas */
-.pruebasv1{
-  margin: 50px 0px 50px 0px;
-  height: 600px;
-  width: 100%;
-  background-color: #68E88A;
-}
-/* pruebas */
-
 /* footer */
 .footer-container img:hover{
     opacity: 80%;
@@ -109,3 +101,65 @@ a{
     display: block; 
 }
 /* footer */
+
+/* ofertas */
+.pricing-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  background-color: #68E88A;
+  padding: 50px;
+  margin-bottom: 200px;
+}
+
+.pricing-plan{
+  flex: 1;
+  text-align: center;
+  max-width: 400px;
+  flex-grow: 1;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: 'Sono', sans-serif;
+}
+
+.plan-price{
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.plan-title{
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.plan-features{
+  list-style: none;
+  padding: 0px;
+}
+
+.plan-features li{
+  margin-bottom: 10px;
+}
+
+.plan-button{
+  background-color: #E16CEA;
+  border: 0;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Sono', sans-serif;
+}
+
+@media (max-width: 1250px) {
+  .pricing-container{
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricing-plan{
+  width: 400px;
+}
+}
+/* ofertas */

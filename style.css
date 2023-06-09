@@ -56,12 +56,16 @@ font-size: 1.3rem;
 @media (max-width: 1180px) {
   .ingal{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
-  .img-gal1, .img-gal2, .img-gal3, .img-gal4, .img-gal5, .img-gal6, .img-gal7{
-    grid-area: span 1;
-  }
+  .img-gal1{grid-area: 3/1/4/3;}
+  .img-gal2{grid-area: 1/1/3/2;}
+  .img-gal3{grid-area: 2/2/3/3;}
+  .img-gal4{grid-area: 1/2/2/3;}
+  .img-gal5{grid-area: 4/1/5/2;}
+  .img-gal6{grid-area: 4/2/5/3;}
+  .img-gal7{grid-area: 5/1/6/3;}
 }
 
 .gal-container{

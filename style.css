@@ -1,88 +1,75 @@
 /* fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');  
 /* fuentes */
 
-/* menu */
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 20px;
-  overflow: hidden;
-  background-color: #E144E9;
-}
-
-.menu li {
-  float: left;
-}
-
-.menu li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.menu li a:hover {
-  background-color: #111;
-  border-radius: 10px;
-  opacity: 80%;
-}
-
-.active {
-    background-color: #E16CEA;
-    border-radius: 10px;
-  }
-
-  @media (max-width: 1250px) {
-    .menu li {
-        float: none;
-      }
-  }
-/* menu */
-
-/* general */
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #9BFF92;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.page-title{
-  color: white;
-  text-align: center;
-  font-size: 3rem;
-  font-family: 'Pacifico', cursive;
-}
-/* general */
-
-/* galeria de trabajos */
-.work-gallery{
+/* barra de navegación */
+.head-nav{
   display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  padding: 20px 0px 20px 0px;
-  margin: 60px 0px 60px 0px;
-  background-color: #68E88A ;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid black;
+  text-align: center;
+  margin: 0px 50px 0px 50px;
+}
+.head-nav a div img{
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+.nav-text{
+color: rgb(134, 134, 134);
+font-family: 'Oswald', sans-serif;
+font-size: 1.3rem;
+}
+.head-nav a div h2{
+  font-family: 'Cinzel', serif;
+}
+.active{
+  color: #000000;
+  border-bottom: #000000 solid 3px;
+}
+/* barra de navegación */
+
+.ingal{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 42vh 42vh;
+  gap: 10px;
 }
 
-.work-gallery img{
-  max-width: 400px;
-  padding: 0.3rem;
+.gal img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
-/* galeria de trabajos */
+.img-gal1{grid-area: 1/1/2/3;}
+.img-gal2{grid-area: 1/3/3/4;}
+.img-gal3{grid-area: 1/4/2/5;}
+.img-gal4{grid-area: 1/5/2/6;}
+.img-gal5{grid-area: 2/1/3/2;}
+.img-gal6{grid-area: 2/2/3/3;}
+.img-gal7{grid-area: 2/4/3/6;}
 
+@media (max-width: 1180px) {
+  .ingal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .img-gal1, .img-gal2, .img-gal3, .img-gal4, .img-gal5, .img-gal6, .img-gal7{
+    grid-area: span 1;
+  }
+}
+
+.gal-container{
+  padding: 50px;
+}
 /* footer */
 .footer-container img:hover{
-    opacity: 80%;
+    opacity: 70%;
 }
 
 .footer-container img{
@@ -93,7 +80,7 @@ a{
 }
 
 .footer-container{
-    background-color: #E144E9;
+    background-color: #000000;
     width: 100%;
     text-align: center;
     padding: 50px 0px 50px 0pc ;
@@ -102,64 +89,14 @@ a{
 }
 /* footer */
 
-/* ofertas */
-.pricing-container{
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-  background-color: #68E88A;
-  padding: 50px;
-  margin-bottom: 200px;
+/* general */
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
-.pricing-plan{
-  flex: 1;
-  text-align: center;
-  max-width: 400px;
-  flex-grow: 1;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  padding: 20px;
-  font-family: 'Sono', sans-serif;
+body{
+  margin: 0;
+  padding: 0;
 }
-
-.plan-price{
-  font-weight: 900;
-  font-size: 3rem;
-}
-
-.plan-title{
-  font-weight: 900;
-  font-size: 1.5rem;
-}
-
-.plan-features{
-  list-style: none;
-  padding: 0px;
-}
-
-.plan-features li{
-  margin-bottom: 10px;
-}
-
-.plan-button{
-  background-color: #E16CEA;
-  border: 0;
-  padding: 15px;
-  border-radius: 5px;
-  color: white;
-  font-family: 'Sono', sans-serif;
-}
-
-@media (max-width: 1250px) {
-  .pricing-container{
-    flex-direction: column;
-    height: 100%;
-}
-
-.pricing-plan{
-  width: 400px;
-}
-}
-/* ofertas */
+/* general */

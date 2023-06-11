@@ -73,6 +73,7 @@ body{
 .parra-gen{
   text-align: center;
   padding: 0px 15px 0px 15px;
+  font-size: 1.5rem;
 }
 /* general */
 
@@ -82,8 +83,11 @@ body{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 42vh 42vh;
   gap: 10px;
+  margin: 50px;
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 10px;
 }
-
 .gal img{
   height: 100%;
   width: 100%;
@@ -97,12 +101,11 @@ body{
 .img-gal5{grid-area: 2/1/3/2;}
 .img-gal6{grid-area: 2/2/3/3;}
 .img-gal7{grid-area: 2/4/3/6;}
-
 @media (max-width: 1180px) {
   .ingal{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
   }
   .img-gal1{grid-area: 3/1/4/3;}
   .img-gal2{grid-area: 1/1/3/2;}
@@ -112,9 +115,7 @@ body{
   .img-gal6{grid-area: 4/2/5/3;}
   .img-gal7{grid-area: 5/1/6/3;}
 }
-.gal-container{
-  padding: 50px;
-}
+
 /* galeria inicio */
 
 /* contacto */
@@ -138,7 +139,12 @@ body{
   opacity: 70%;
 }
 .contact-container div{
-  width: 400px;
+  width: 25vw;
+}
+@media (max-width: 1180px) {
+  .contact-container div{
+    width: 50vw;
+}
 }
 .mapa{
   border: 0;
@@ -150,3 +156,43 @@ body{
   border-bottom: #000000 solid 3px;
 }
 /* contacto */
+
+/* galeria trabajos */
+.tragal{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 30vh);
+  gap: 10px;
+  margin: 50px;
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+.img-tra1{grid-area: 1/1/2/2;}
+.img-tra2{grid-area: 1/2/2/3;}
+.img-tra3{grid-area: 1/3/2/4;}
+.img-tra4{grid-area: 1/4/3/6;}
+.img-tra5{grid-area: 1/6/2/7;}
+.img-tra6{grid-area: 2/1/3/2;}
+.img-tra7{grid-area: 2/2/3/4;}
+.img-tra8{grid-area: 2/6/3/7;}
+.img-tra9{grid-area: 3/1/4/3;}
+.img-tra10{grid-area: 3/3/4/4;}
+.img-tra11{grid-area: 3/4/4/6;}
+.img-tra12{grid-area: 3/6/4/7;}
+.img-tra13{grid-area: 4/1/5/2;}
+.img-tra14{grid-area: 4/2/5/3;}
+.img-tra15{grid-area: 4/3/5/4;}
+.img-tra16{grid-area: 4/4/5/5;}
+.img-tra17{grid-area: 4/5/5/7;}
+@media (max-width: 1180px) {
+  .tragal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(17, 80vh);
+  }
+  .img-tra1, .img-tra2, .img-tra3, .img-tra4, .img-tra5, .img-tra6, .img-tra7, .img-tra8, .img-tra9, .img-tra10, .img-tra11, .img-tra12, .img-tra13, .img-tra14, .img-tra15, .img-tra16, .img-tra17{
+    grid-area: span 1;
+  }
+}
+/* galeria trabajos */

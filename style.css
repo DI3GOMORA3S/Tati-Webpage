@@ -25,10 +25,14 @@ font-size: 2rem;
 }
 .head-nav a div h2{
   font-family: 'Cinzel', serif;
+  font-size: 2rem;
 }
 .active{
   color: #000000;
   border-bottom: #000000 solid 3px;
+}
+.nav-text:hover{
+  color: #000000;
 }
 /* barra de navegación */
 
@@ -75,6 +79,13 @@ body{
   padding: 0px 15px 0px 15px;
   font-size: 1.5rem;
 }
+@media (min-width: 1180px) {
+  .gal img:hover{
+    opacity: 50%;
+    transform: scale(1.01);
+    transition: 0.5s;
+  }
+  }
 /* general */
 
 /* galeria inicio */
@@ -139,11 +150,11 @@ body{
   opacity: 70%;
 }
 .contact-container div{
-  width: 25vw;
+  width: 25%
 }
 @media (max-width: 1180px) {
   .contact-container div{
-    width: 50vw;
+    width: 50%;
 }
 }
 .mapa{

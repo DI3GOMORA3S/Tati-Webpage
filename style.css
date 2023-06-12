@@ -92,7 +92,7 @@ body{
 .ingal{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 42vh 42vh;
+  grid-template-rows: 40vh 40vh;
   gap: 10px;
   margin: 50px;
   padding: 10px;

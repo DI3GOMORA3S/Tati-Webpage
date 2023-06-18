@@ -1,6 +1,7 @@
 /* fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Staatliches&display=swap'); 
 /* fuentes */
 
 /* barra de navegación */
@@ -9,30 +10,46 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
   text-align: center;
   margin: 0px 50px 0px 50px;
 }
-.head-nav a div img{
-  height: 60px;
-  margin: 0px;
-  padding: 0px;
-}
 .nav-text{
-color: rgb(134, 134, 134);
+color: rgb(129, 129, 129);
 font-family: 'Oswald', sans-serif;
 font-size: 2rem;
+padding: 5px;
+transition: background-color 0.5s ease;
+transition: color 0.2s ease;
+transform: skew(-10deg);
+border-radius: 3px;
 }
 .head-nav a div h2{
   font-family: 'Cinzel', serif;
   font-size: 2rem;
+  margin: 15px;
+  color: white;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 .active{
-  color: #000000;
+  color: white;
   border-bottom: #000000 solid 3px;
+  background-color: #E144E9;
 }
 .nav-text:hover{
-  color: #000000;
+  color: white;
+  background-color: #E16CEA;
+}
+
+@media (max-width: 1180px) {
+ .head-nav{
+  flex-direction: column;
+  padding-bottom: 10px;
+ }
 }
 /* barra de navegación */
 
@@ -57,6 +74,9 @@ font-size: 2rem;
 /* footer */
 
 /* general */
+.sub-rra{
+  background-color: #E144E9;
+}
 a{
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -64,20 +84,24 @@ a{
 body{
   margin: 0;
   padding: 0;
+  background-color: #191A19;
 }
 .titulos{
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Oswald', sans-serif;
+  color: white;
 }
 .titulo-principal{
   font-size: 3rem;
+  color: white;
 }
 .parra-gen{
   text-align: center;
   padding: 0px 15px 0px 15px;
   font-size: 1.5rem;
+  color: white;
 }
 @media (min-width: 1180px) {
   .gal img:hover{
@@ -88,46 +112,73 @@ body{
   }
 /* general */
 
-/* galeria inicio */
-.ingal{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 40vh 40vh;
-  gap: 10px;
-  margin: 50px;
-  padding: 10px;
-  background-color: #000000;
-  border-radius: 10px;
+/* inicio */
+.txt-bien{
+  display: flex;
+  flex-direction: column;
+  margin: 100px 10% 180px 10%;
+  color: white;
 }
-.gal img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+.txt-bien h1{
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 6rem;
+  margin-bottom: 0px;
 }
-.img-gal1{grid-area: 1/1/2/3;}
-.img-gal2{grid-area: 1/3/3/4;}
-.img-gal3{grid-area: 1/4/2/5;}
-.img-gal4{grid-area: 1/5/2/6;}
-.img-gal5{grid-area: 2/1/3/2;}
-.img-gal6{grid-area: 2/2/3/3;}
-.img-gal7{grid-area: 2/4/3/6;}
-@media (max-width: 1180px) {
-  .ingal{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-  }
-  .img-gal1{grid-area: 3/1/4/3;}
-  .img-gal2{grid-area: 1/1/3/2;}
-  .img-gal3{grid-area: 2/2/3/3;}
-  .img-gal4{grid-area: 1/2/2/3;}
-  .img-gal5{grid-area: 4/1/5/2;}
-  .img-gal6{grid-area: 4/2/5/3;}
-  .img-gal7{grid-area: 5/1/6/3;}
+.txt-bien p{
+  font-weight: 400;
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
 }
 
-/* galeria inicio */
+.serv-lin{
+  border: white 3px solid;
+  margin: 0px 30%;
+}
+.services1, .services2, .services3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5% 10%;
+}
+.serv div img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.serv div{
+  width: 100%;
+}
+.serv div h2{
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  color: white;
+  margin: 0px;
+  background-color: #E144E9 ;
+  margin: 20px 25% 0px 20%;
+  border-radius: 3px;
+  transform: skew(-10deg);
+}
+.serv div p{
+  font-weight: 400;
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  color: white;
+  padding: 0px 20px 15px 20px;
+}
+@media (max-width: 1180px) {
+  .services1, .services3{
+    display: flex;
+    flex-direction: column;
+  }
+  .services2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  }
+/* inicio */
 
 /* contacto */
 .contact-container{
@@ -142,12 +193,12 @@ body{
 }
 .contact-container div a img{
   width: 40%;
-  background-color: rgb(219, 213, 213);
+  background-color: #E16CEA;
   padding: 20px;
   border-radius: 50px;
 }
 .contact-container div a img:hover{
-  opacity: 70%;
+  opacity: 30%;
 }
 .contact-container div{
   width: 25%
@@ -177,6 +228,12 @@ body{
   margin: 50px;
   padding: 10px;
   background-color: #000000;
+  border-radius: 10px;
+}
+.gal img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 .img-tra1{grid-area: 1/1/2/2;}

@@ -180,6 +180,7 @@ body{
   .serv-container{
     flex-direction: column;
     margin: 50px 90px 0px 90px;
+    gap: 60px;
   }
 }
 /* inicio */

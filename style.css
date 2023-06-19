@@ -44,12 +44,14 @@ border-radius: 3px;
   color: white;
   background-color: #E16CEA;
 }
-
 @media (max-width: 1180px) {
  .head-nav{
   flex-direction: column;
   padding-bottom: 10px;
  }
+ .head-nav a div h2{
+  font-size: 4rem;
+}
 }
 /* barra de navegación */
 
@@ -122,7 +124,7 @@ body{
 .txt-bien h1{
   font-family: 'Staatliches', cursive;
   font-weight: 400;
-  font-size: 6rem;
+  font-size: 9rem;
   margin-bottom: 0px;
 }
 .txt-bien p{
@@ -131,53 +133,55 @@ body{
   font-size: 1.5rem;
 }
 
-.serv-lin{
+.serv-lin h2{
   border: white 3px solid;
-  margin: 0px 30%;
+  margin: 0px 10%;
+  border-radius: 1000px;
 }
-.services1, .services2, .services3{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 5% 10%;
-}
-.serv div img{
-  height: 100%;
+.serv-container .services img{
   width: 100%;
-  border-radius: 20px;
+  object-fit: cover;
+  background: white;
+  padding: 3px;
+  border-radius: 5px;
 }
-.serv div{
-  width: 100%;
-}
-.serv div h2{
-  text-align: center;
+.serv-container .services h2{
+  color: white;
   font-family: 'Staatliches', cursive;
   font-weight: 400;
-  font-size: 3rem;
-  color: white;
-  margin: 0px;
-  background-color: #E144E9 ;
-  margin: 20px 25% 0px 20%;
-  border-radius: 3px;
+  font-size: 2rem;
   transform: skew(-10deg);
+  border-radius: 3px;
+  background-color: #E144E9;
+  border-bottom: #000000 solid 3px;
+  margin: 10px 20%;
 }
-.serv div p{
+.serv-container .services p{
+  color: white;
   font-weight: 400;
   font-family: 'Cinzel', serif;
-  font-size: 2rem;
-  color: white;
-  padding: 0px 20px 15px 20px;
+  font-size: 1.5rem;
+}
+.services{
+  width: 30%;
+  text-align: center;
+}
+
+.serv-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 30px 0px 30px;
 }
 @media (max-width: 1180px) {
-  .services1, .services3{
-    display: flex;
+  .services{
+    width: 100%;
+  }
+  .serv-container{
     flex-direction: column;
+    margin: 50px 90px 0px 90px;
   }
-  .services2{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  }
+}
 /* inicio */
 
 /* contacto */

@@ -21,7 +21,6 @@ font-size: 2rem;
 padding: 5px;
 transition: background-color 0.5s ease;
 transition: color 0.2s ease;
-transform: skew(-10deg);
 border-radius: 3px;
 }
 .head-nav a div h2{
@@ -105,13 +104,7 @@ body{
   font-size: 1.5rem;
   color: white;
 }
-@media (min-width: 1180px) {
-  .gal img:hover{
-    opacity: 50%;
-    transform: scale(1.01);
-    transition: 0.5s;
-  }
-  }
+
 /* general */
 
 /* inicio */
@@ -150,7 +143,6 @@ body{
   font-family: 'Staatliches', cursive;
   font-weight: 400;
   font-size: 2rem;
-  transform: skew(-10deg);
   border-radius: 3px;
   background-color: #E144E9;
   border-bottom: #000000 solid 3px;
@@ -166,7 +158,6 @@ body{
   width: 30%;
   text-align: center;
 }
-
 .serv-container{
   display: flex;
   flex-direction: row;
@@ -240,6 +231,7 @@ body{
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  cursor: pointer;
 }
 .img-tra1{grid-area: 1/1/2/2;}
 .img-tra2{grid-area: 1/2/2/3;}
@@ -258,6 +250,14 @@ body{
 .img-tra15{grid-area: 4/3/5/4;}
 .img-tra16{grid-area: 4/4/5/5;}
 .img-tra17{grid-area: 4/5/5/7;}
+
+@media (min-width: 1180px) {
+  .gal img:hover{
+    opacity: 50%;
+    transform: scale(1.01);
+    transition: 0.5s;
+  }
+  }
 @media (max-width: 1180px) {
   .tragal{
     display: grid;
@@ -266,6 +266,42 @@ body{
   }
   .img-tra1, .img-tra2, .img-tra3, .img-tra4, .img-tra5, .img-tra6, .img-tra7, .img-tra8, .img-tra9, .img-tra10, .img-tra11, .img-tra12, .img-tra13, .img-tra14, .img-tra15, .img-tra16, .img-tra17{
     grid-area: span 1;
+  }
+}
+
+.popup-imag{
+  position: fixed;
+  top:0; left: 0;
+  background: rgba( 0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-imag span{
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-imag img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 5px white;
+  border-radius: 5px;
+  width: 800px;
+  object-fit: cover;
+}
+
+@media (max-width:768px){
+  .popup-imag img{
+    width: 95%;
   }
 }
 /* galeria trabajos */

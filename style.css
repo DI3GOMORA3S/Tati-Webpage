@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Staatliches&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* fuentes */
 
 /* barra de navegación */
@@ -121,8 +122,8 @@ body{
   margin-bottom: 0px;
 }
 .txt-bien p{
-  font-weight: 400;
-  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -150,8 +151,8 @@ body{
 }
 .serv-container .services p{
   color: white;
-  font-weight: 400;
-  font-family: 'Cinzel', serif;
+  font-weight: 200;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
 }
 .services{
@@ -281,8 +282,8 @@ body{
 
 .popup-imag span{
   position: absolute;
-  top: 0; right: 10px;
-  font-size: 60px;
+  top: 0; right: 2%;
+  font-size: 6rem;
   font-weight: bolder;
   color: white;
   cursor: pointer;
@@ -299,9 +300,12 @@ body{
   object-fit: cover;
 }
 
-@media (max-width:768px){
+@media (max-width:1180px){
   .popup-imag img{
     width: 95%;
+  }
+  .popup-imag span{
+    font-size: 10rem;
   }
 }
 /* galeria trabajos */

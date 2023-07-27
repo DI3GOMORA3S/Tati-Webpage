@@ -9,8 +9,10 @@ document.querySelector('.popup-imag span').onclick = () =>{
     document.querySelector('.popup-imag').style.display = 'none';    
 }
 
-    document.addEventListener("keydown", function(event){
-        if (event.key === 'Escape'){
-            document.querySelector('.popup-imag').style.display = 'none';       
-        }
-    });
+document.addEventListener("keydown", function(event){
+    switch(event.key) {
+        case 'Escape':
+            document.querySelector('.popup-imag').style.display = 'none';
+        break;
+    }
+});

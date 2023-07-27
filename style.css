@@ -87,6 +87,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: #191A19;
+  user-select: none;
 }
 .titulos{
   display: flex;
@@ -126,17 +127,15 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
 }
-
 .serv-lin h2{
   border: white 3px solid;
-  margin: 0px 10%;
+  margin: 2% 10%;
   border-radius: 1000px;
 }
 .serv-container .services img{
   width: 100%;
   object-fit: cover;
   background: white;
-  padding: 3px;
   border-radius: 5px;
 }
 .serv-container .services h2{
@@ -158,22 +157,19 @@ body{
 .services{
   width: 30%;
   text-align: center;
+  background-color: #191a19;
+  border-radius: 5px;
+  padding: 20px;
 }
 .serv-container{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 50px 30px 0px 30px;
-}
-@media (max-width: 1180px) {
-  .services{
-    width: 100%;
-  }
-  .serv-container{
-    flex-direction: column;
-    margin: 50px 90px 0px 90px;
-    gap: 60px;
-  }
+  padding: 70px 20px;
+  gap: 20px;
+  background-attachment: fixed;
+  background-image: url("/assets/images/resources/fondo-servicios.jpg");
+  background-size: cover;
 }
 /* inicio */
 

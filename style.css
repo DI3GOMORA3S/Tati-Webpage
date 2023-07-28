@@ -286,7 +286,6 @@ body{
 
 .popup-imag span{
   position: absolute;
-  top: 0; right: 2%;
   font-size: 6rem;
   font-weight: bolder;
   color: white;
@@ -294,6 +293,19 @@ body{
   z-index: 100;
 }
 
+.cross{
+  top: 0; right: 2%;
+}
+
+.lft-arrow{
+  left: 2%;
+  bottom: 0;
+}
+
+.rgt-arrow{
+  right: 2%;
+  bottom: 0;
+}
 .popup-imag img{
   position: absolute;
   top: 50%; left: 50%;

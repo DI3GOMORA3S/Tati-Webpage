@@ -5,7 +5,7 @@ image.onclick = () =>{
     }
 });
 
-document.querySelector('.popup-imag span').onclick = () =>{
+document.querySelector('.popup-imag .cross').onclick = () =>{
     document.querySelector('.popup-imag').style.display = 'none';    
 }
 

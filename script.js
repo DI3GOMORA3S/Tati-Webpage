@@ -16,7 +16,3 @@ document.addEventListener("keydown", function(event){
         break;
     }
 });
-
-document.querySelector('.popup_imag .lft-arrow').onclick = () =>{
-     alert("gil");
-}
